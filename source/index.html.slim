@@ -2,3 +2,36 @@
 title: Antoine Nourtier, développeur
 ---
 
+.container-fluid.red
+  .row
+    .col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2.pvxl
+      = image_tag 'logo.png', class: 'max-width'
+
+.container-fluid.light-gray
+  .row
+    .container.mtxl.mbxl
+      .row
+        p.lead.mbn.text-center.phl
+          |
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+
+.container-fluid.white
+  .row
+    .container.mtxl.mbxl
+      .row
+        h1.text-center Timeline
+
+.container-fluid.orange
+  .row
+    .container.pvxl
+      .row
+        - data.skills.each do |skill|
+          .col-md-3.col-sm-4.col-xs-6.text-center
+            .mtl.mrl.mbl.mll
+              = skill.title
+
+.container-fluid.light-gray
+  .row
+    .container.mtxl.mbxl
+      .row
+        h1.text-center Contact
