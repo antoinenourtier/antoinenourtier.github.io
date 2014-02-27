@@ -33,3 +33,41 @@
 .white {
   background-color: #FFFFFF;
 }
+
+.gray-b {
+  background-color: #95a5a6;
+}
+
+.dark-orange {
+  background-color: #f7b450;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.z-index-max {
+  z-index: 999;
+}
+
+.timeline {
+  min-height: 250px;
+}
+
+.float_right {
+  float: right;
+}
+
+.float_left {
+  float: left;
+}
+
+.contact_btn {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+

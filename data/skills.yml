@@ -1,12 +1,27 @@
 -
-  title: 'PHP'
-  percent: 100
--
-  title: 'RubyOnRails'
-  percent: 60
--
-  title: 'Symfony'
-  percent: 70
--
   title: 'HTML'
   percent: 90
+-
+  title: 'CSS'
+  percent: 80
+-
+  title: 'JavaScript'
+  percent: 65
+-
+  title: 'MySQL'
+  percent: 60
+-
+  title: 'JAVA'
+  percent: 40
+-
+  title: 'PHP'
+  percent: 90
+-
+  title: 'C/C#'
+  percent: 50
+-
+  title: 'Merise'
+  percent: 60
+-
+  title: 'Dév Objet'
+  percent: 70

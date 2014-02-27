@@ -2,10 +2,10 @@
 title: Antoine Nourtier, développeur
 ---
 
-.container-fluid.red
+.container-fluid.red.ptxl
   .row
     .col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2.pvxl
-      = image_tag 'logo.png', class: 'max-width'
+      = image_tag 'logo.png', class: 'max-width ptxl'
 
 .container-fluid.light-gray
   .row
@@ -13,25 +13,48 @@ title: Antoine Nourtier, développeur
       .row
         p.lead.mbn.text-center.phl
           |
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+            Je suis un étudiant en 3ème année d'école d'ingénierie informatique (EPSI).
+
+        p.lead.mbn.text-center.phl
+          |
+            Au niveau informatique je suis passionné par le développement web, je suis notamment trésorier de l'association EPNet qui consiste dans du développement web. Au sein de celle-ci, nous délivrons des cours aux étudiants de l'école et créons des sites pour les professionnels.
+
+        p.lead.mbn.text-center.phl
+          |
+            En dehors de l'informatique je suis passionné par la course à pied, le tennis de table ainsi que la musique.
 
 .container-fluid.white
   .row
-    .container.mtxl.mbxl
-      .row
-        h1.text-center Timeline
-
-.container-fluid.orange
-  .row
     .container.pvxl
+      .row
+        h1.text-center Connaissances
       .row
         - data.skills.each do |skill|
           .col-md-3.col-sm-4.col-xs-6.text-center
             .mtl.mrl.mbl.mll
               = skill.title
+              br
+              = skill.percent
 
-.container-fluid.light-gray
+.container-fluid.dark-orange
   .row
     .container.mtxl.mbxl
       .row
-        h1.text-center Contact
+        h1.text-center Timeline
+      .row
+        - data.timelines.each do |timeline|
+          .col-md-3.col-sm-4.col-xs-6.text-center.timeline
+            .mtl.mrl.mbl.mll
+              p= timeline.date
+              p= timeline.content
+
+
+.container-fluid.light-gray
+  .row
+    .container.mtl.mbxl
+      .row.ptxl
+        a.btn-success.btn-lg.col-md-2.text-center.mrxl.mtm href="mailto:a.nourtier@orange.fr" Me contacter
+        a.col-md-2.text-center.mlxl href="https://github.com/antoinenourtier"
+          img.max-width src="images/GitHub_Logo.png"
+        a.col-md-2.text-center href="https://www.facebook.com/anourtier"
+          img src="images/facebook.png"
